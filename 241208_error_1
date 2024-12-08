@@ -1,0 +1,355 @@
+... logging to /home/sanguk/.ros/log/6e6aa2c2-b51b-11ef-9873-5795d96d5ee3/roslaunch-raspberrypi-3269.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://raspberrypi:42019/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ocams_1cgn/auto_exposure: False
+ * /ocams_1cgn/exposure: 200
+ * /ocams_1cgn/frame_rate: 30
+ * /ocams_1cgn/gain: 100
+ * /ocams_1cgn/imu_mode: AMGEUL
+ * /ocams_1cgn/left_frame_id: left_frame
+ * /ocams_1cgn/port: /dev/ttyACM0
+ * /ocams_1cgn/resolution: 2
+ * /ocams_1cgn/right_frame_id: right_frame
+ * /ocams_1cgn/show_image: True
+ * /ocams_1cgn/wb_blue: 180
+ * /ocams_1cgn/wb_red: 145
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+ * /rtabmap/rtabmap/Grid/DepthDecimation: 4
+ * /rtabmap/rtabmap/Grid/FlatObstacleDetected: true
+ * /rtabmap/rtabmap/Kp/DetectorStrategy: 0
+ * /rtabmap/rtabmap/Kp/MaxDepth: 10
+ * /rtabmap/rtabmap/Kp/MaxFeatures: 200
+ * /rtabmap/rtabmap/Mem/IncrementalMemory: true
+ * /rtabmap/rtabmap/Mem/InitWMWithAllNodes: false
+ * /rtabmap/rtabmap/RGBD/LoopClosureReextractFeatures: true
+ * /rtabmap/rtabmap/Rtabmap/DetectionRate: 0.0
+ * /rtabmap/rtabmap/Rtabmap/TimeThr: 700
+ * /rtabmap/rtabmap/SURF/HessianThreshold: 1000
+ * /rtabmap/rtabmap/Vis/EstimationType: 0
+ * /rtabmap/rtabmap/Vis/MaxDepth: 20
+ * /rtabmap/rtabmap/frame_id: base_link
+ * /rtabmap/rtabmap/queue_size: 10
+ * /rtabmap/rtabmap/subscribe_depth: False
+ * /rtabmap/rtabmap/subscribe_stereo: True
+ * /rtabmap/rtabmap_viz/approx_sync: True
+ * /rtabmap/rtabmap_viz/frame_id: base_link
+ * /rtabmap/rtabmap_viz/queue_size: 10
+ * /rtabmap/rtabmap_viz/subscribe_odom_info: True
+ * /rtabmap/rtabmap_viz/subscribe_stereo: True
+ * /rtabmap/stereo_odometry/GFTT/MinDistance: 0
+ * /rtabmap/stereo_odometry/GFTT/QualityLevel: 0.00001
+ * /rtabmap/stereo_odometry/Odom/FillInfoData: true
+ * /rtabmap/stereo_odometry/Odom/Strategy: 0
+ * /rtabmap/stereo_odometry/OdomF2M/MaxSize: 2000
+ * /rtabmap/stereo_odometry/Vis/EstimationType: 0
+ * /rtabmap/stereo_odometry/Vis/MaxDepth: 20
+ * /rtabmap/stereo_odometry/Vis/MaxFeatures: 1000
+ * /rtabmap/stereo_odometry/Vis/MinInliers: 10
+ * /rtabmap/stereo_odometry/approx_sync: True
+ * /rtabmap/stereo_odometry/frame_id: base_link
+ * /rtabmap/stereo_odometry/odom_frame_id: odom
+ * /stereo/stereo_image_proc/disparity_range: 128
+
+NODES
+  /
+    ocams_1cgn (ocams_1cgn/ocams_1cgn)
+    ocams_base_link (tf2_ros/static_transform_publisher)
+    ocams_camera_link1 (tf2_ros/static_transform_publisher)
+    ocams_camera_link2 (tf2_ros/static_transform_publisher)
+    rviz (rviz/rviz)
+  /rtabmap/
+    rtabmap (rtabmap_slam/rtabmap)
+    rtabmap_viz (rtabmap_viz/rtabmap_viz)
+    stereo_odometry (rtabmap_odom/stereo_odometry)
+  /stereo/
+    stereo_image_proc (stereo_image_proc/stereo_image_proc)
+    stereo_nodelet (nodelet/nodelet)
+
+auto-starting new master
+process[master]: started with pid [3279]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 6e6aa2c2-b51b-11ef-9873-5795d96d5ee3
+process[rosout-1]: started with pid [3289]
+started core service [/rosout]
+process[ocams_1cgn-2]: started with pid [3292]
+process[ocams_base_link-3]: started with pid [3293]
+process[ocams_camera_link1-4]: started with pid [3294]
+process[ocams_camera_link2-5]: started with pid [3295]
+process[stereo/stereo_nodelet-6]: started with pid [3300]
+process[stereo/stereo_image_proc-7]: started with pid [3316]
+process[rtabmap/stereo_odometry-8]: started with pid [3317]
+process[rtabmap/rtabmap-9]: started with pid [3318]
+process[rtabmap/rtabmap_viz-10]: started with pid [3319]
+process[rviz-11]: started with pid [3320]
+IMU initialized: AMGEUL
+V4L2_CORE: Unable to find parent usb device [ /dev/video10 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video11 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video12 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video13 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video14 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video15 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video16 ].
+Pixel format: Y, U, Y, V
+Width: 640, Height: 480, Image size: 614400
+Frame Rate : 1 / 30 (30.00 fps)
+[ INFO] [1733631495.735866379]: Initialized the camera
+[ INFO] [1733631497.933504956]: Loading from ROS calibration files
+[ INFO] [1733631497.937491377]: camera calibration URL: package://ocams_1cgn/config/left.yaml
+[ INFO] [1733631497.966377837]: camera calibration URL: package://ocams_1cgn/config/right.yaml
+[1, 0, 0, -322.341717;
+ 0, 1, 0, -242.53289;
+ 0, 0, 0, 452.149831;
+ 0, 0, 8.333333333333334, 0]
+[ INFO] [1733631498.185683855]: Got camera calibration files
+[ INFO] [1733631498.188305025]: Success, found camera
+[ INFO] [1733631500.562173916]: Starting node...
+[ INFO] [1733631501.082439663]: Initializing nodelet with 4 worker threads.
+[ INFO] [1733631501.246089239]: Initializing nodelet with 4 worker threads.
+[ INFO] [1733631502.216306091]: Starting node...
+[ INFO] [1733631502.932841339]: Odometry: frame_id               = base_link
+[ INFO] [1733631502.933257651]: Odometry: odom_frame_id          = odom
+[ INFO] [1733631502.933409076]: Odometry: publish_tf             = true
+[ INFO] [1733631502.933506668]: Odometry: wait_for_transform     = true
+[ INFO] [1733631502.933632093]: Odometry: wait_for_transform_duration  = 0.100000
+[ INFO] [1733631502.933735296]: Odometry: log_to_rosout_level    = 4
+[ INFO] [1733631502.933945295]: Odometry: initial_pose           = xyz=0.000000,0.000000,0.000000 rpy=0.000000,-0.000000,0.000000
+[ INFO] [1733631502.934147683]: Odometry: ground_truth_frame_id  = 
+[ INFO] [1733631502.934266108]: Odometry: ground_truth_base_frame_id = base_link
+[ INFO] [1733631502.934359941]: Odometry: config_path            = 
+[ INFO] [1733631502.934444570]: Odometry: publish_null_when_lost = true
+[ INFO] [1733631502.934555643]: Odometry: publish_compressed_sensor_data = false
+[ INFO] [1733631502.934651587]: Odometry: guess_frame_id         = 
+[ INFO] [1733631502.934799623]: Odometry: guess_min_translation  = 0.000000
+[ INFO] [1733631502.934920919]: Odometry: guess_min_rotation     = 0.000000
+[ INFO] [1733631502.935017233]: Odometry: guess_min_time         = 0.000000
+[ INFO] [1733631502.935124010]: Odometry: expected_update_rate   = 0.000000 Hz
+[ INFO] [1733631502.935217991]: Odometry: max_update_rate        = 0.000000 Hz
+[ INFO] [1733631502.935304731]: Odometry: min_update_rate        = 0.000000 Hz
+[ INFO] [1733631502.935383860]: Odometry: wait_imu_to_init       = false
+[ INFO] [1733631502.935459045]: Odometry: sensor_data_compression_format   = .jpg
+[ INFO] [1733631502.935555248]: Odometry: sensor_data_parallel_compression = true
+[ INFO] [1733631502.935707395]: Odometry: stereoParams_=1 visParams_=1 icpParams_=0
+[ INFO] [1733631503.308116649]: Setting odometry parameter "GFTT/MinDistance"="0"
+[ INFO] [1733631503.310854466]: Setting odometry parameter "GFTT/QualityLevel"="0.00001"
+[ INFO] [1733631503.866688666]: Setting odometry parameter "Odom/FillInfoData"="true"
+[ INFO] [1733631504.189550916]: Setting odometry parameter "Odom/Strategy"="0"
+[ INFO] [1733631504.236537113]: Setting odometry parameter "OdomF2M/MaxSize"="2000"
+[ INFO] [1733631505.073583815]: rtabmap_viz: Using configuration from "/opt/ros/noetic/share/rtabmap_ros/launch/config/rgbd_gui.ini"
+[ INFO] [1733631505.793145547]: /rtabmap/rtabmap(maps): map_filter_radius          = 0.000000
+[ INFO] [1733631505.793391176]: /rtabmap/rtabmap(maps): map_filter_angle           = 30.000000
+[ INFO] [1733631505.793474138]: /rtabmap/rtabmap(maps): map_cleanup                = true
+[ INFO] [1733631505.793588526]: /rtabmap/rtabmap(maps): map_always_update          = false
+[ INFO] [1733631505.793653396]: /rtabmap/rtabmap(maps): map_empty_ray_tracing      = true
+[ INFO] [1733631505.793718618]: /rtabmap/rtabmap(maps): cloud_output_voxelized     = true
+[ INFO] [1733631505.793778192]: /rtabmap/rtabmap(maps): cloud_subtract_filtering   = false
+[ INFO] [1733631505.793845617]: /rtabmap/rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[ INFO] [1733631505.800735890]: /rtabmap/rtabmap(maps): octomap_tree_depth         = 16
+[ INFO] [1733631506.266751233]: rtabmap: frame_id      = base_link
+[ INFO] [1733631506.266929936]: rtabmap: map_frame_id  = map
+[ INFO] [1733631506.267002972]: rtabmap: log_to_rosout_level = 4
+[ INFO] [1733631506.267068694]: rtabmap: initial_pose  = 
+[ INFO] [1733631506.267120286]: rtabmap: use_action_for_goal  = false
+[ INFO] [1733631506.267185156]: rtabmap: tf_delay      = 0.050000
+[ INFO] [1733631506.267244730]: rtabmap: tf_tolerance  = 0.100000
+[ INFO] [1733631506.267298674]: rtabmap: odom_sensor_sync   = false
+[ INFO] [1733631506.267347100]: rtabmap: pub_loc_pose_only_when_localizing = false
+[ INFO] [1733631506.277755925]: rtabmap: stereo_to_depth = false
+[ INFO] [1733631506.277965868]: rtabmap: gen_scan  = false
+[ INFO] [1733631506.278055294]: rtabmap: gen_depth  = false
+[ INFO] [1733631507.979340375]: Setting RTAB-Map parameter "Grid/DepthDecimation"="4"
+[ INFO] [1733631508.022028224]: Setting RTAB-Map parameter "Grid/FlatObstacleDetected"="true"
+[ INFO] [1733631509.875178550]: Setting odometry parameter "Vis/EstimationType"="0"
+[ INFO] [1733631509.921375245]: Setting RTAB-Map parameter "Kp/DetectorStrategy"="0"
+[ INFO] [1733631510.018097647]: Setting odometry parameter "Vis/MaxDepth"="20"
+[ INFO] [1733631510.027641236]: Setting odometry parameter "Vis/MaxFeatures"="1000"
+[ INFO] [1733631510.063142164]: Setting RTAB-Map parameter "Kp/MaxDepth"="10"
+[ INFO] [1733631510.072895677]: Setting RTAB-Map parameter "Kp/MaxFeatures"="200"
+[ INFO] [1733631510.095450704]: Setting odometry parameter "Vis/MinInliers"="10"
+[ INFO] [1733631510.856992440]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="true"
+[ INFO] [1733631510.862163630]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="false"
+[ INFO] [1733631512.306402813]: Setting RTAB-Map parameter "RGBD/LoopClosureReextractFeatures"="true"
+[ INFO] [1733631513.068459785]: Setting RTAB-Map parameter "Rtabmap/DetectionRate"="0.0"
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[ INFO] [1733631513.440606004]: Setting RTAB-Map parameter "Rtabmap/TimeThr"="700"
+[ INFO] [1733631513.743151790]: Setting RTAB-Map parameter "SURF/HessianThreshold"="1000"
+[ INFO] [1733631514.285525377]: StereoOdometry: approx_sync = true
+[ INFO] [1733631514.285740580]: StereoOdometry: approx_sync_max_interval = 0.000000
+[ INFO] [1733631514.285833579]: StereoOdometry: topic_queue_size = 1
+[ INFO] [1733631514.285898560]: StereoOdometry: sync_queue_size = 5
+[ INFO] [1733631514.285997356]: StereoOdometry: subscribe_rgbd = false
+[ INFO] [1733631514.286056300]: StereoOdometry: keep_color = false
+[ INFO] [1733631514.785634040]: 
+/rtabmap/stereo_odometry subscribed to (approx sync):
+   /stereo/left/image_rect \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ WARN] (2024-12-08 13:18:35.366) Features2d.cpp:898::generateKeypoints3D() A large number (558/896) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631515.380708243]: Odom: quality=0, std dev=99.995000m|99.995000rad, update time=0.382995s, delay=1733631311.975284s
+[ INFO] [1733631515.489269204]: Setting RTAB-Map parameter "Vis/EstimationType"="0"
+[ INFO] [1733631515.733849361]: Setting RTAB-Map parameter "Vis/MaxDepth"="20"
+[ WARN] (2024-12-08 13:18:35.851) Features2d.cpp:898::generateKeypoints3D() A large number (565/894) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] [1733631515.945011710]: /rtabmap/stereo_odometry: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/stereo_odometry subscribed to (approx sync):
+   /stereo/left/image_rect \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ INFO] [1733631516.191635793]: Odom: quality=108, std dev=0.001163m|0.001163rad, update time=0.591935s, delay=1733631312.153487s
+[ WARN] (2024-12-08 13:18:36.475) Features2d.cpp:898::generateKeypoints3D() A large number (554/896) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631516.624133250]: Odom: quality=110, std dev=0.000989m|0.000989rad, update time=0.318360s, delay=1733631311.785925s
+[ WARN] (2024-12-08 13:18:36.939) Features2d.cpp:898::generateKeypoints3D() A large number (556/889) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631517.248486594]: Odom: quality=105, std dev=0.000886m|0.000886rad, update time=0.519307s, delay=1733631312.010234s
+[ INFO] [1733631517.269197240]: rtabmap_viz: Reading parameters from the ROS server...
+[ INFO] [1733631517.286495426]: rtabmap_viz: Cannot get rtabmap's parameters, waiting max 5 seconds in case the node has just been launched.
+[ WARN] (2024-12-08 13:18:37.551) Features2d.cpp:898::generateKeypoints3D() A large number (557/881) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631517.619367545]: Odom: quality=99, std dev=0.001891m|0.001891rad, update time=0.177340s, delay=1733631311.714195s
+[ WARN] (2024-12-08 13:18:37.894) Features2d.cpp:898::generateKeypoints3D() A large number (574/901) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631517.996085069]: Odom: quality=100, std dev=0.001232m|0.001232rad, update time=0.267545s, delay=1733631311.823931s
+[ WARN] (2024-12-08 13:18:38.295) Features2d.cpp:898::generateKeypoints3D() A large number (584/892) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631518.423996387]: Odom: quality=82, std dev=0.000881m|0.000881rad, update time=0.319120s, delay=1733631311.785856s
+[ WARN] (2024-12-08 13:18:38.658) Features2d.cpp:898::generateKeypoints3D() A large number (585/895) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631518.828452707]: Odom: quality=99, std dev=0.001187m|0.001187rad, update time=0.309725s, delay=1733631311.790134s
+[ WARN] (2024-12-08 13:18:39.151) Features2d.cpp:898::generateKeypoints3D() A large number (581/896) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631519.394747352]: Odom: quality=95, std dev=0.001261m|0.001261rad, update time=0.396688s, delay=1733631311.956584s
+[ WARN] (2024-12-08 13:18:39.697) Features2d.cpp:898::generateKeypoints3D() A large number (588/895) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631519.923914490]: Odom: quality=97, std dev=0.001867m|0.001867rad, update time=0.351980s, delay=1733631311.785817s
+[ INFO] [1733631519.940438310]: RTAB-Map detection rate = 0.000000 Hz
+[ INFO] [1733631519.948329908]: rtabmap: Deleted database "/home/sanguk/.ros/rtabmap.db" (--delete_db_on_start or -d are set).
+[ INFO] [1733631519.955174086]: rtabmap: Using database from "/home/sanguk/.ros/rtabmap.db" (0 MB).
+[ WARN] (2024-12-08 13:18:39.961) Features2d.cpp:587::create() SURF and SIFT features cannot be used because OpenCV was not built with xfeatures2d module. GFTT/ORB is used instead.
+[ WARN] (2024-12-08 13:18:40.061) Features2d.cpp:587::create() SURF and SIFT features cannot be used because OpenCV was not built with xfeatures2d module. GFTT/ORB is used instead.
+[ WARN] (2024-12-08 13:18:40.078) Memory.cpp:820::parseParameters() Mem/UseOdomFeatures is enabled, but Vis/FeatureType and Kp/DetectorStrategy parameters are not the same! Disabling Mem/UseOdomFeatures...
+[ WARN] (2024-12-08 13:18:40.083) Features2d.cpp:587::create() SURF and SIFT features cannot be used because OpenCV was not built with xfeatures2d module. GFTT/ORB is used instead.
+[ WARN] (2024-12-08 13:18:40.097) Memory.cpp:820::parseParameters() Mem/UseOdomFeatures is enabled, but Vis/FeatureType and Kp/DetectorStrategy parameters are not the same! Disabling Mem/UseOdomFeatures...
+[ WARN] (2024-12-08 13:18:40.201) Features2d.cpp:898::generateKeypoints3D() A large number (562/890) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631520.459148802]: Odom: quality=86, std dev=0.001196m|0.001196rad, update time=0.462925s, delay=1733631311.954032s
+[ WARN] (2024-12-08 13:18:40.482) Features2d.cpp:587::create() SURF and SIFT features cannot be used because OpenCV was not built with xfeatures2d module. GFTT/ORB is used instead.
+[ WARN] (2024-12-08 13:18:40.490) Memory.cpp:820::parseParameters() Mem/UseOdomFeatures is enabled, but Vis/FeatureType and Kp/DetectorStrategy parameters are not the same! Disabling Mem/UseOdomFeatures...
+[ INFO] [1733631520.493079361]: rtabmap: Database version = "0.21.6".
+[ INFO] [1733631520.494826646]: rtabmap: SLAM mode (Mem/IncrementalMemory=true)
+[ WARN] (2024-12-08 13:18:40.848) Features2d.cpp:898::generateKeypoints3D() A large number (568/893) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] [1733631520.945276020]: /rtabmap/stereo_odometry: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/stereo_odometry subscribed to (approx sync):
+   /stereo/left/image_rect \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ INFO] [1733631521.036277988]: Odom: quality=93, std dev=0.001034m|0.001034rad, update time=0.486288s, delay=1733631311.931150s
+[ WARN] [1733631521.080817663]: rtabmap: Parameters subscribe_stereo and subscribe_rgb cannot be true at the same time. Parameter subscribe_rgb is set to false.
+[ WARN] [1733631521.122507375]: Parameter "queue_size" has been renamed to "sync_queue_size" and will be removed in future versions! The value (10) is copied to "sync_queue_size".
+[ INFO] [1733631521.126745218]: /rtabmap/rtabmap: subscribe_depth = false
+[ INFO] [1733631521.126887087]: /rtabmap/rtabmap: subscribe_rgb = false
+[ INFO] [1733631521.126946328]: /rtabmap/rtabmap: subscribe_stereo = true
+[ INFO] [1733631521.127000309]: /rtabmap/rtabmap: subscribe_rgbd = false (rgbd_cameras=1)
+[ INFO] [1733631521.127053308]: /rtabmap/rtabmap: subscribe_sensor_data = false
+[ INFO] [1733631521.127106086]: /rtabmap/rtabmap: subscribe_odom_info = false
+[ INFO] [1733631521.127155771]: /rtabmap/rtabmap: subscribe_user_data = false
+[ INFO] [1733631521.127204530]: /rtabmap/rtabmap: subscribe_scan = false
+[ INFO] [1733631521.127254455]: /rtabmap/rtabmap: subscribe_scan_cloud = false
+[ INFO] [1733631521.127308825]: /rtabmap/rtabmap: subscribe_scan_descriptor = false
+[ INFO] [1733631521.127358288]: /rtabmap/rtabmap: topic_queue_size = 10
+[ INFO] [1733631521.127408028]: /rtabmap/rtabmap: sync_queue_size = 10
+[ INFO] [1733631521.127456713]: /rtabmap/rtabmap: approx_sync = false
+[ INFO] [1733631521.135994380]: Setup stereo callback
+[ WARN] (2024-12-08 13:18:41.224) Features2d.cpp:898::generateKeypoints3D() A large number (579/896) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631521.423187670]: 
+/rtabmap/rtabmap subscribed to (exact sync):
+   /stereo_odometry \
+   /stereo/left/image_rect_color \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ INFO] [1733631521.618235501]: Odom: quality=100, std dev=0.001376m|0.001376rad, update time=0.503764s, delay=1733631311.913034s
+[ WARN] (2024-12-08 13:18:41.968) Features2d.cpp:898::generateKeypoints3D() A large number (573/886) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631522.166615153]: Odom: quality=103, std dev=0.001529m|0.001529rad, update time=0.370997s, delay=1733631311.894499s
+[ WARN] (2024-12-08 13:18:42.499) Features2d.cpp:898::generateKeypoints3D() A large number (575/888) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:42.607) Features2d.cpp:898::generateKeypoints3D() A large number (549/783) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] [1733631522.987658748]: rtabmap_viz: rtabmap's parameters seem not all there yet! continuing with those there if some...
+[ WARN] (2024-12-08 13:18:43.015) Memory.cpp:2084::forget() Less signatures transferred (0) than added (1)! The working memory cannot decrease in size.
+[ INFO] [1733631523.089582769]: rtabmap (1): Rate=0.00s, Limit=0.700s, Conversion=0.0332s, RTAB-Map=0.7832s, Maps update=0.0113s pub=0.0034s (local map=1, WM=1)
+[ INFO] [1733631523.202181832]: Odom: quality=100, std dev=0.001475m|0.001475rad, update time=0.889454s, delay=1733631312.464067s
+[ WARN] (2024-12-08 13:18:43.523) Features2d.cpp:898::generateKeypoints3D() A large number (540/785) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:43.600) Features2d.cpp:898::generateKeypoints3D() A large number (575/892) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631524.068575222]: rtabmap (2): Rate=0.00s, Limit=0.700s, Conversion=0.0242s, RTAB-Map=0.8188s, Maps update=0.0013s pub=0.0001s (local map=1, WM=1)
+[ INFO] [1733631524.221592276]: Odom: quality=94, std dev=0.001224m|0.001224rad, update time=0.889564s, delay=1733631312.449450s
+[ WARN] (2024-12-08 13:18:44.403) PreferencesDialog.cpp:4812::setParameter() Trying to set "Kp/DetectorStrategy" to SURF but RTAB-Map isn't built with the nonfree module from OpenCV. Keeping default combo value: GFTT+ORB.
+[ WARN] (2024-12-08 13:18:44.434) Features2d.cpp:898::generateKeypoints3D() A large number (546/792) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:44.510) Features2d.cpp:898::generateKeypoints3D() A large number (573/897) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631524.633530082]: rtabmap (3): Rate=0.00s, Limit=0.700s, Conversion=0.0014s, RTAB-Map=0.4121s, Maps update=0.0003s pub=0.0001s (local map=1, WM=1)
+[ INFO] [1733631525.012328864]: Odom: quality=100, std dev=0.001505m|0.001505rad, update time=0.685690s, delay=1733631312.207157s
+[ WARN] (2024-12-08 13:18:45.176) Features2d.cpp:898::generateKeypoints3D() A large number (541/771) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631525.493746352]: rtabmap (4): Rate=0.00s, Limit=0.700s, Conversion=0.0013s, RTAB-Map=0.4819s, Maps update=0.0002s pub=0.0001s (local map=1, WM=1)
+[ WARN] (2024-12-08 13:18:45.598) Features2d.cpp:898::generateKeypoints3D() A large number (578/889) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631526.205399214]: Odom: quality=99, std dev=0.001492m|0.001492rad, update time=0.898978s, delay=1733631312.533218s
+[ INFO] [1733631526.363804689]: rtabmap 0.21.6 started...
+[ WARN] [1733631526.365218420]: /rtabmap/rtabmap: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). Parameter "approx_sync" is false, which means that input topics should have all the exact timestamp for the callback to be called.
+/rtabmap/rtabmap subscribed to (exact sync):
+   /stereo_odometry \
+   /stereo/left/image_rect_color \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ WARN] (2024-12-08 13:18:46.408) Features2d.cpp:898::generateKeypoints3D() A large number (542/778) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:46.752) Features2d.cpp:898::generateKeypoints3D() A large number (573/893) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631526.812194976]: rtabmap (5): Rate=0.00s, Limit=0.700s, Conversion=0.0161s, RTAB-Map=0.5819s, Maps update=0.0005s pub=0.0002s (local map=1, WM=1)
+[ WARN] [1733631526.942938004]: /rtabmap/stereo_odometry: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/stereo_odometry subscribed to (approx sync):
+   /stereo/left/image_rect \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ INFO] [1733631527.283241237]: Odom: quality=94, std dev=0.001375m|0.001375rad, update time=0.736197s, delay=1733631312.378048s
+[ WARN] (2024-12-08 13:18:47.418) Features2d.cpp:898::generateKeypoints3D() A large number (539/762) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631527.437107257]: rtabmap_viz: Parameters read = 377
+[ INFO] [1733631527.437484236]: rtabmap_viz: Parameters successfully read.
+[ INFO] [1733631527.789745259]: rtabmap (6): Rate=0.00s, Limit=0.700s, Conversion=0.0020s, RTAB-Map=0.5020s, Maps update=0.0005s pub=0.0002s (local map=1, WM=1)
+[ WARN] (2024-12-08 13:18:47.872) Features2d.cpp:898::generateKeypoints3D() A large number (581/897) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631528.248928959]: Odom: quality=101, std dev=0.001134m|0.001134rad, update time=0.678172s, delay=1733631312.376765s
+[ WARN] (2024-12-08 13:18:48.472) Features2d.cpp:898::generateKeypoints3D() A large number (568/892) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:48.537) Features2d.cpp:898::generateKeypoints3D() A large number (548/776) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631528.831372577]: rtabmap (7): Rate=0.00s, Limit=0.700s, Conversion=0.0016s, RTAB-Map=0.5743s, Maps update=0.0006s pub=0.0002s (local map=1, WM=1)
+[ INFO] [1733631528.858396435]: Odom: quality=101, std dev=0.001217m|0.001217rad, update time=0.553464s, delay=1733631312.086110s
+[ WARN] (2024-12-08 13:18:49.007) Features2d.cpp:898::generateKeypoints3D() A large number (570/896) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:49.071) Features2d.cpp:898::generateKeypoints3D() A large number (545/790) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631529.405636665]: Odom: quality=93, std dev=0.000786m|0.000786rad, update time=0.522427s, delay=1733631312.200276s
+[ INFO] [1733631529.460588189]: rtabmap (8): Rate=0.00s, Limit=0.700s, Conversion=0.0016s, RTAB-Map=0.6027s, Maps update=0.0003s pub=0.0002s (local map=1, WM=1)
+[ WARN] (2024-12-08 13:18:49.665) Features2d.cpp:898::generateKeypoints3D() A large number (536/775) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:49.681) Features2d.cpp:898::generateKeypoints3D() A large number (563/887) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631529.985576472]: rtabmap (9): Rate=0.00s, Limit=0.700s, Conversion=0.0034s, RTAB-Map=0.5087s, Maps update=0.0005s pub=0.0001s (local map=1, WM=1)
+[ INFO] [1733631530.103385148]: Odom: quality=92, std dev=0.000781m|0.000781rad, update time=0.685496s, delay=1733631312.298255s
+[ WARN] (2024-12-08 13:18:50.259) Features2d.cpp:898::generateKeypoints3D() A large number (557/789) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631530.511330460]: rtabmap (10): Rate=0.00s, Limit=0.700s, Conversion=0.0024s, RTAB-Map=0.4039s, Maps update=0.0002s pub=0.0001s (local map=1, WM=1)
+[ WARN] (2024-12-08 13:18:50.528) Features2d.cpp:898::generateKeypoints3D() A large number (578/882) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ INFO] [1733631530.860359684]: Odom: quality=96, std dev=0.001538m|0.001538rad, update time=0.550206s, delay=1733631312.088069s
+[ WARN] (2024-12-08 13:18:51.075) Features2d.cpp:898::generateKeypoints3D() A large number (534/772) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] (2024-12-08 13:18:51.347) Features2d.cpp:898::generateKeypoints3D() A large number (564/893) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] [1733631531.367982303]: /rtabmap/rtabmap: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). Parameter "approx_sync" is false, which means that input topics should have all the exact timestamp for the callback to be called.
+/rtabmap/rtabmap subscribed to (exact sync):
+   /stereo_odometry \
+   /stereo/left/image_rect_color \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ INFO] [1733631531.387680782]: rtabmap (11): Rate=0.00s, Limit=0.700s, Conversion=0.0034s, RTAB-Map=0.5210s, Maps update=0.0002s pub=0.0001s (local map=1, WM=1)
+[ INFO] [1733631531.611446541]: Odom: quality=95, std dev=0.001450m|0.001450rad, update time=0.582102s, delay=1733631312.073323s
+[ WARN] (2024-12-08 13:18:51.818) Features2d.cpp:898::generateKeypoints3D() A large number (545/787) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
+[ WARN] [1733631531.946933829]: /rtabmap/stereo_odometry: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/stereo_odometry subscribed to (approx sync):
+   /stereo/left/image_rect \
+   /stereo/right/image_rect \
+   /stereo/left/camera_info \
+   /stereo/right/camera_info
+[ WARN] (2024-12-08 13:18:51.997) Features2d.cpp:898::generateKeypoints3D() A large number (575/895) of stereo correspondences are rejected! Optical flow may have failed because images are not calibrated, the background is too far (no disparity between the images), maximum disparity may be too small (128.000000) or that exposure between left and right images is too different.
