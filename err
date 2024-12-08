@@ -123,3 +123,15 @@ terminate called after throwing an instance of 'std::out_of_range'
 
 ocams_1cgn-2] process has died [pid 21782, exit code -6, cmd /home/sanguk/capstone_ws/devel/lib/ocams_1cgn/ocams_1cgn __name:=ocams_1cgn __log:=/home/sanguk/.ros/log/b06ebc40-b538-11ef-9873-5795d96d5ee3/ocams_1cgn-2.log].
 log file: /home/sanguk/.ros/log/b06ebc40-b538-11ef-9873-5795d96d5ee3/ocams_1cgn-2*.log
+
+
+
+
+rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.108 right:=/stereo/right/image_raw left:=/stereo/left/image_raw left_camera:=/stereo/left right_camera:=/stereo/right
+Waiting for service /stereo/left/set_camera_info ...
+Service not found
+Waiting for service /stereo/right/set_camera_info ...
+Service not found
+QMutex: destroying locked mutex
+
+
