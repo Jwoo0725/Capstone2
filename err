@@ -21,3 +21,90 @@ Traceback (most recent call last):
   File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 470, in _get_service_uri
     raise ServiceException("service [%s] unavailable"%self.resolved_name)
 rospy.service.ServiceException: service [/left_camera/set_camera_info] unavailable
+
+-------------
+/imu/data
+/imu/mag
+/imu/timestamp
+/ocams_1cgn/parameter_descriptions
+/ocams_1cgn/parameter_updates
+/rosout
+/rosout_agg
+/stereo/depth
+/stereo/depth/compressed
+/stereo/depth/compressed/parameter_descriptions
+/stereo/depth/compressed/parameter_updates
+/stereo/depth/compressedDepth
+/stereo/depth/compressedDepth/parameter_descriptions
+/stereo/depth/compressedDepth/parameter_updates
+/stereo/depth/theora
+/stereo/depth/theora/parameter_descriptions
+/stereo/depth/theora/parameter_updates
+/stereo/disparity_image
+/stereo/disparity_image/compressed
+/stereo/disparity_image/compressed/parameter_descriptions
+/stereo/disparity_image/compressed/parameter_updates
+/stereo/disparity_image/compressedDepth
+/stereo/disparity_image/compressedDepth/parameter_descriptions
+/stereo/disparity_image/compressedDepth/parameter_updates
+/stereo/disparity_image/theora
+/stereo/disparity_image/theora/parameter_descriptions
+/stereo/disparity_image/theora/parameter_updates
+/stereo/left/camera_info
+/stereo/left/image_raw
+/stereo/left/image_raw/compressed
+/stereo/left/image_raw/compressed/parameter_descriptions
+/stereo/left/image_raw/compressed/parameter_updates
+/stereo/left/image_raw/compressedDepth
+/stereo/left/image_raw/compressedDepth/parameter_descriptions
+/stereo/left/image_raw/compressedDepth/parameter_updates
+/stereo/left/image_raw/theora
+/stereo/left/image_raw/theora/parameter_descriptions
+/stereo/left/image_raw/theora/parameter_updates
+/stereo/left/image_rect
+/stereo/left/image_rect/compressed
+/stereo/left/image_rect/compressed/parameter_descriptions
+/stereo/left/image_rect/compressed/parameter_updates
+/stereo/left/image_rect/compressedDepth
+/stereo/left/image_rect/compressedDepth/parameter_descriptions
+/stereo/left/image_rect/compressedDepth/parameter_updates
+/stereo/left/image_rect/theora
+/stereo/left/image_rect/theora/parameter_descriptions
+/stereo/left/image_rect/theora/parameter_updates
+/stereo/point_cloud
+/stereo/right/camera_info
+/stereo/right/image_raw
+/stereo/right/image_raw/compressed
+/stereo/right/image_raw/compressed/parameter_descriptions
+/stereo/right/image_raw/compressed/parameter_updates
+/stereo/right/image_raw/compressedDepth
+/stereo/right/image_raw/compressedDepth/parameter_descriptions
+/stereo/right/image_raw/compressedDepth/parameter_updates
+/stereo/right/image_raw/theora
+/stereo/right/image_raw/theora/parameter_descriptions
+/stereo/right/image_raw/theora/parameter_updates
+/stereo/right/image_rect
+/stereo/right/image_rect/compressed
+/stereo/right/image_rect/compressed/parameter_descriptions
+/stereo/right/image_rect/compressed/parameter_updates
+/stereo/right/image_rect/compressedDepth
+/stereo/right/image_rect/compressedDepth/parameter_descriptions
+/stereo/right/image_rect/compressedDepth/parameter_updates
+/stereo/right/image_rect/theora
+/stereo/right/image_rect/theora/parameter_descriptions
+/stereo/right/image_rect/theora/parameter_updates
+/stereo/timestamp
+/tf
+/tf_static
+sanguk@raspberrypi:/opt/ros/noetic/lib/python3/dist-packages/rosgraph$ rosrun camera_calibration cameracalibrator.py --size -8x6 --square 0.025 image:=/stero/left/image_raw camera:=/stero/left
+Waiting for service /stero/left/set_camera_info ...
+Service not found
+QMutex: destroying locked mutex
+QIconvCodec::convertToUnicode: internal error, UTF-16 codec not found
+Segmentation fault (core dumped)
+sanguk@raspberrypi:/opt/ros/noetic/lib/python3/dist-packages/rosgraph$ rosrun camera_calibration cameracalibrator.py --size -8x6 --square 0.025 image:=/stereo/left/image_raw camera:=/stereo/left
+Waiting for service /stereo/left/set_camera_info ...
+Service not found
+QMutex: destroying locked mutex
+QMutex: destroying locked mutex
+Segmentation fault (core dumped)
