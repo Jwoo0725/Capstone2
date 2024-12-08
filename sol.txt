@@ -1,3 +1,18 @@
 rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.108 right:=/stereo/right/image_raw left:=/stereo/left/image_raw left_camera:=/stereo/left right_camera:=/stereo/right left_camera_info_service:=/set_camera_info right_camera_info_service:=/set_camera_info
 
 roslaunch ocams_1cgn ocams.launch left_camera_info_service:=/stereo/left/set_camera_info right_camera_info_service:=/stereo/right/set_camera_info
+
+\
+  <node pkg="ocams_1cgn" type="ocams_1cgn" name="ocams_1cgn_left" output="screen">
+    <param name="left_info_service" value="/stereo/left/set_camera_info"/>
+    <param name="right_info_service" value="/set_camera_info_unused"/>
+    <param name="port" value="/dev/video0"/>
+    <param name="left_frame_id" value="left_frame"/>
+  </node>
+
+  <node pkg="ocams_1cgn" type="ocams_1cgn" name="ocams_1cgn_right" output="screen">
+    <param name="left_info_service" value="/set_camera_info_unused"/>
+    <param name="right_info_service" value="/stereo/right/set_camera_info"/>
+    <param name="port" value="/dev/video1"/>
+    <param name="right_frame_id" value="right_frame"/>
+  </node>
