@@ -114,6 +114,12 @@ Segmentation fault (core dumped)
 
 
 
+[ INFO] [1733644364.167868115]: Initialized the camera
+[ INFO] [1733644364.985301155]: Loading from ROS calibration files
+[ INFO] [1733644364.988735007]: camera calibration URL: package://ocams_1cgn/config/left.yaml
+[ INFO] [1733644364.994922756]: camera calibration URL: package://ocams_1cgn/config/right.yaml
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 0) >= this->size() (which is 0)
 
 ocams_1cgn-2] process has died [pid 21782, exit code -6, cmd /home/sanguk/capstone_ws/devel/lib/ocams_1cgn/ocams_1cgn __name:=ocams_1cgn __log:=/home/sanguk/.ros/log/b06ebc40-b538-11ef-9873-5795d96d5ee3/ocams_1cgn-2.log].
 log file: /home/sanguk/.ros/log/b06ebc40-b538-11ef-9873-5795d96d5ee3/ocams_1cgn-2*.log
