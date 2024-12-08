@@ -1,0 +1,72 @@
+sanguk@raspberrypi:~/capstone_ws$ roslaunch ocams_1cgn ocams_ros.launch --screen
+... logging to /home/sanguk/.ros/log/281b8e9a-b560-11ef-96af-0fcdc8b5cd39/roslaunch-raspberrypi-15033.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://raspberrypi:41139/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ocams_1cgn/auto_exposure: False
+ * /ocams_1cgn/exposure: 100
+ * /ocams_1cgn/frame_rate: 30
+ * /ocams_1cgn/gain: 100
+ * /ocams_1cgn/imu_mode: AMGEUL
+ * /ocams_1cgn/left_frame_id: left_frame
+ * /ocams_1cgn/left_info_service: stereo/left/set_c...
+ * /ocams_1cgn/port: /dev/ttyACM0
+ * /ocams_1cgn/resolution: 2
+ * /ocams_1cgn/right_frame_id: right_frame
+ * /ocams_1cgn/right_info_service: stereo/right/set_...
+ * /ocams_1cgn/show_image: True
+ * /ocams_1cgn/wb_blue: 180
+ * /ocams_1cgn/wb_red: 145
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+
+NODES
+  /
+    ocams_1cgn (ocams_1cgn/ocams_1cgn)
+    ocams_base_link (tf2_ros/static_transform_publisher)
+    ocams_camera_link1 (tf2_ros/static_transform_publisher)
+    ocams_camera_link2 (tf2_ros/static_transform_publisher)
+
+auto-starting new master
+process[master]: started with pid [15042]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 281b8e9a-b560-11ef-96af-0fcdc8b5cd39
+process[rosout-1]: started with pid [15053]
+started core service [/rosout]
+process[ocams_1cgn-2]: started with pid [15060]
+process[ocams_base_link-3]: started with pid [15061]
+process[ocams_camera_link1-4]: started with pid [15062]
+process[ocams_camera_link2-5]: started with pid [15063]
+[ INFO] [1733661009.066967559]: Spinning until killed publishing map to base_link
+[ INFO] [1733661009.101653739]: Spinning until killed publishing base_link to left_frame
+[ INFO] [1733661009.132905444]: Spinning until killed publishing base_link to right_frame
+IMU initialized: AMGEUL
+V4L2_CORE: Unable to find parent usb device [ /dev/video10 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video11 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video12 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video13 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video14 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video15 ].
+V4L2_CORE: Unable to find parent usb device [ /dev/video16 ].
+Pixel format: Y, U, Y, V
+Width: 640, Height: 480, Image size: 614400
+Frame Rate : 1 / 30 (30.00 fps)
+[ INFO] [1733661009.469683895]: Initialized the camera
+[ INFO] [1733661010.198149406]: Loading from ROS calibration files
+[ INFO] [1733661010.205574629]: camera calibration URL: package://ocams_1cgn/config/left.yaml
+[ INFO] [1733661010.207738065]: camera calibration URL: package://ocams_1cgn/config/right.yaml
+[1, 0, 0, -322.341717;
+ 0, 1, 0, -242.53289;
+ 0, 0, 0, 452.149831;
+ 0, 0, 8.333333333333334, 0]
+[ INFO] [1733661010.222986116]: Got camera calibration files
+[ INFO] [1733661010.269356447]: Success, found camera
+
