@@ -135,3 +135,17 @@ Service not found
 QMutex: destroying locked mutex
 
 
+    def __init__(self, node: Node, cname='camera', url='', namespace=''):
+        """Call the Constructor."""
+        self.node = node
+        self.cname = cname
+        self.url = url
+        self.camera_info = None
+
+        # advertise set_camera_info service
+        service_name = 'set_camera_info'
+        if namespace:
+            service_name = namespace + '/' + service_name
+        self.node.get_logger().debug(service_name + ' service declared')
+        self.svc = self.node.create_service(SetCameraInfo, service_name, self.setCameraInfo)
+
