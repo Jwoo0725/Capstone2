@@ -1,1 +1,25 @@
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    motor = Motor(forward = 20, backward = 21)
+  File "/usr/lib/python3/dist-packages/gpiozero/devices.py", line 95, in __call__
+    self = super(GPIOMeta, cls).__call__(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/gpiozero/output_devices.py", line 858, in __init__
+    forward_device=PinClass(forward, pin_factory=pin_factory),
+  File "/usr/lib/python3/dist-packages/gpiozero/devices.py", line 95, in __call__
+    self = super(GPIOMeta, cls).__call__(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/gpiozero/output_devices.py", line 326, in __init__
+    super(PWMOutputDevice, self).__init__(
+  File "/usr/lib/python3/dist-packages/gpiozero/output_devices.py", line 47, in __init__
+    super(OutputDevice, self).__init__(pin, pin_factory=pin_factory)
+  File "/usr/lib/python3/dist-packages/gpiozero/mixins.py", line 69, in __init__
+    super(SourceMixin, self).__init__(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/gpiozero/devices.py", line 375, in __init__
+    pin = self.pin_factory.pin(pin)
+  File "/usr/lib/python3/dist-packages/gpiozero/pins/pi.py", line 73, in pin
+    pin = self.pin_class(self, n)
+  File "/usr/lib/python3/dist-packages/gpiozero/pins/rpigpio.py", line 101, in __init__
+    GPIO.setup(self.number, GPIO.IN, self.GPIO_PULL_UPS[self._pull])
+RuntimeError: Not running on a RPi!
 
